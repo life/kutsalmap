@@ -1,0 +1,700 @@
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg-dark: #0f172a;
+    --bg-glass: rgba(15, 23, 42, 0.85);
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --border-color: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --shadow-lg: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.app-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+    background-color: #1e293b;
+}
+
+/* Floating Search Bar */
+.search-container {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1000;
+    background: var(--bg-glass);
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 16px;
+    box-shadow: var(--shadow-lg);
+    width: auto;
+    min-width: 450px;
+}
+
+.logo-small {
+    color: var(--primary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--border-color);
+    padding-right: 16px;
+}
+
+.search-input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-input-wrapper i {
+    color: var(--text-muted);
+}
+
+.search-input-wrapper input {
+    background: transparent;
+    border: none;
+    color: var(--text-main);
+    padding: 10px 0;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+}
+
+.stats-badge {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.search-results-panel {
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    width: 100%;
+    background: var(--bg-glass);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    /* Başlangıçta gizli */
+    flex-direction: column;
+    box-shadow: var(--shadow-lg);
+    z-index: 1001;
+}
+
+.search-results-panel.active {
+    display: flex;
+}
+
+.search-result-item {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.result-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.result-meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Premium Popup Styling */
+.custom-premium-popup .leaflet-popup-content-wrapper {
+    background: var(--bg-glass) !important;
+    backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-main);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+    overflow: hidden;
+    max-height: 85vh;
+    /* Mobilde ekran yüksekliğinin %85'i */
+}
+
+
+.custom-premium-popup .leaflet-popup-content {
+    margin: 0 !important;
+    width: 500px !important;
+}
+
+.custom-premium-popup .leaflet-popup-close-button {
+    color: var(--text-main) !important;
+    background: rgba(15, 23, 42, 0.6) !important;
+    backdrop-filter: blur(8px);
+    width: 36px !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    top: 12px !important;
+    right: 12px !important;
+    font-size: 20px !important;
+    z-index: 1000;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    border: 1px solid var(--glass-border) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.custom-premium-popup .leaflet-popup-close-button:hover {
+    background: var(--primary) !important;
+    color: white !important;
+    transform: rotate(90deg) scale(1.1);
+    border-color: var(--primary-hover) !important;
+}
+
+.custom-premium-popup .leaflet-popup-tip-container {
+    display: none;
+    /* Mobilde arrow'u gizle, daha temiz görünsün */
+}
+
+
+.popup-info-card,
+.popup-form-card {
+    padding: 24px;
+    overflow-y: auto;
+    /* İçerik uzunsa scroll olsun */
+    max-height: calc(85vh - 20px);
+    /* Wrapper yüksekliğine uyumlu olsun */
+}
+
+.popup-info-card img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.popup-info-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.popup-info-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-main);
+}
+
+/* ----- Popup Tabs ----- */
+.popup-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: var(--primary);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    border-radius: 2px 2px 0 0;
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Tab içerikleri için spacing */
+.tab-content h4 {
+    margin-bottom: 10px;
+}
+
+.tab-content img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.popup-form-card h4 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: var(--text-main);
+}
+
+.popup-form-card label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 6px;
+}
+
+.popup-form-card textarea,
+.popup-form-card input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid var(--glass-border) !important;
+    color: white !important;
+    padding: 12px !important;
+    margin-bottom: 15px !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+    outline: none;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.btn-delete-small {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.btn-delete-small:hover {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-edit-small {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    padding: 12px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.2s;
+}
+
+.btn-edit-small:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+.btn-secondary {
+    background: rgba(148, 163, 184, 0.1);
+    color: #94a3b8;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+    background: #64748b;
+    color: white;
+}
+
+/* Leaflet UI Overrides */
+.leaflet-bar {
+    border: none !important;
+    box-shadow: var(--shadow-lg) !important;
+}
+
+.leaflet-bar a {
+    background: var(--bg-glass) !important;
+    backdrop-filter: blur(12px) !important;
+    color: var(--text-main) !important;
+    border: 1px solid var(--glass-border) !important;
+    width: 40px !important;
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+.leaflet-bar a:hover {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .search-container {
+        width: calc(100% - 32px);
+        min-width: 0;
+        top: 12px;
+        left: 16px;
+        padding: 8px 12px;
+        gap: 12px;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+    .stats-badge {
+        font-size: 0.75rem;
+        padding: 4px 8px;
+    }
+
+    /* Popup mobilde daha geniş ve ekranı daha iyi kaplasın */
+    .custom-premium-popup .leaflet-popup-content-wrapper {
+        border-radius: 16px;
+    }
+
+    .custom-premium-popup .leaflet-popup-content {
+        width: 92vw !important;
+        max-width: 100vw !important;
+        min-width: 92vw !important;
+    }
+
+    /* Popup içeriği daha iyi görünsün */
+    .popup-info-card,
+    .popup-form-card {
+        padding: 20px 16px;
+    }
+
+    .popup-info-card h4,
+    .popup-form-card h4 {
+        font-size: 1.3rem !important;
+        margin-bottom: 12px;
+    }
+
+    .popup-info-card p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    /* Video carousel mobilde daha az padding */
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-prev {
+        left: 8px;
+    }
+
+    .carousel-next {
+        right: 8px;
+    }
+
+    .video-counter {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    /* Locate button mobilde daha aşağıda */
+    #locate-btn {
+        bottom: 80px;
+        right: 16px;
+        width: 44px;
+        height: 44px;
+    }
+
+    /* Form inputları mobilde daha iyi */
+    .popup-form-card input,
+    .popup-form-card textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* Butonlar mobilde tam genişlik */
+    .btn-primary,
+    .btn-secondary {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+}
+
+
+/* Video Carousel Styles */
+.video-carousel {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.video-carousel-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.video-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.video-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+}
+
+.video-slide iframe,
+.video-slide video {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--glass-border);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-btn:hover {
+    background: var(--primary);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+
+.video-counter {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(15, 23, 42, 0.9);
+    backdrop-filter: blur(8px);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: white;
+    font-weight: 600;
+    z-index: 10;
+    border: 1px solid var(--glass-border);
+}
+
+.current-video {
+    color: var(--primary);
+}
+
+/* Locate Button Style */
+#locate-btn {
+    position: absolute;
+    bottom: 110px;
+    right: 24px;
+    z-index: 1000;
+    width: 48px;
+    height: 48px;
+    background: var(--bg-glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#locate-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* User Location Marker Pulse */
+/* Yol Tarifi Butonları */
+.direction-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-direction {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-main);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-direction:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-google:hover {
+    border-color: #4285F4;
+    color: #4285F4;
+}
+
+.btn-yandex:hover {
+    border-color: #fc3f1d;
+    color: #fc3f1d;
+}
+
+.btn-direction i {
+    font-size: 1.1rem;
+}
+
+.user-location-marker {
+    background: #3b82f6;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(59, 130, 246, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(59, 130, 246, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+    }
+}

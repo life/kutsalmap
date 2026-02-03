@@ -1,0 +1,240 @@
+[
+    {
+        "id": "1",
+        "lat": 21.42250476,
+        "lng": 39.82617974,
+        "title": "Kâbe-i Muazzama",
+        "description": "Müslümanların kıblesi ve yeryüzündeki ilk ibadethanedir. Masjid al-Haram'ın merkezinde yer alır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=kYI_Uue9LgY",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/f\/f1\/Kaaba_at_night.jpg\/1024px-Kaaba_at_night.jpg",
+        "created_at": "2026-01-22 19:30:00"
+    },
+    {
+        "id": "2",
+        "lat": 24.4672,
+        "lng": 39.6111,
+        "title": "Mescid-i Nebevî",
+        "description": "Peygamber Efendimiz (SAV) tarafından Medine'de inşa edilen ve içerisinde mübarek kabrinin (Ravza-i Mutahhara) bulunduğu mesciddir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=k8v200Uu5z8",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/10\/Masjid_an-Nabawi_Madinah.jpg\/1024px-Masjid_an-Nabawi_Madinah.jpg",
+        "created_at": "2026-01-22 19:50:00"
+    },
+    {
+        "id": "3",
+        "lat": 21.458,
+        "lng": 39.86,
+        "title": "Nur Dağı (Hira Mağarası)",
+        "description": "İlk vahyin indiği mübarek mekandır. Efendimiz (SAV) burada tefekkür halindeyken Cebrail (AS) gelmiştir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=0eI_A9P07yA",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/0\/00\/Mount_Hira_Makkah.jpg\/1024px-Mount_Hira_Makkah.jpg",
+        "created_at": "2026-01-22 19:55:00"
+    },
+    {
+        "id": "4",
+        "lat": 21.3756,
+        "lng": 39.8504,
+        "title": "Sevr Mağarası",
+        "description": "Hicret sırasında Peygamber Efendimiz (SAV) ve Hz. Ebubekir'in (RA) gizlendiği mucizelerle dolu mağaradır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=YfW5XbY7D9w",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/ca\/Ghar_Thaur.jpg\/1024px-Ghar_Thaur.jpg",
+        "created_at": "2026-01-22 19:33:00"
+    },
+    {
+        "id": "5",
+        "lat": 21.3547,
+        "lng": 39.9843,
+        "title": "Arafat (Cebel-i Rahme)",
+        "description": "Haccın en önemli rüknü olan vakfenin yapıldığı yerdir. Hz. Adem ile Hz. Havva validemizin buluştuğu dağdır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=S8L6020L-3I",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/c\/c5\/Mount_Arafat.jpg\/1024px-Mount_Arafat.jpg",
+        "created_at": "2026-01-22 19:34:00"
+    },
+    {
+        "id": "6",
+        "lat": 24.4392,
+        "lng": 39.6172,
+        "title": "Kuba Mescidi",
+        "description": "İslam tarihinde inşa edilen ilk mesciddir. Efendimiz (SAV) hicret sırasında burada durmuş ve ashabıyla birlikte namaz kılmıştır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=t-6379T73kM",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/1a\/Quba_Mosque_Madinah.jpg\/1024px-Quba_Mosque_Madinah.jpg",
+        "created_at": "2026-01-22 19:51:00"
+    },
+    {
+        "id": "7",
+        "lat": 24.5036,
+        "lng": 39.6125,
+        "title": "Uhud Dağı ve Şehitliği",
+        "description": "Uhud Savaşı'nın gerçekleştiği ve Hz. Hamza (RA) başta olmak üzere birçok sahabi şehidinin metfun bulunduğu mübarek dağdır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=33L890G5MhY",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e0\/Uhud_Mountain_Madinah.jpg\/1024px-Uhud_Mountain_Madinah.jpg",
+        "created_at": "2026-01-22 19:52:00"
+    },
+    {
+        "id": "8",
+        "lat": 24.4839,
+        "lng": 39.5781,
+        "title": "Mescid-i Kıbleteyn",
+        "description": "Kıblenin Kudüs'ten Kâbe'ye (Mekke'ye) çevrildiği vahyin indiği, iki kıbleli mescid olarak bilinen mekandır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=6P3hIq9hWsk",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/7b\/Qiblatain_Mosque_Madinah.jpg\/1024px-Qiblatain_Mosque_Madinah.jpg",
+        "created_at": "2026-01-22 19:53:00"
+    },
+    {
+        "id": "9",
+        "lat": 24.4673,
+        "lng": 39.6157,
+        "title": "Cennetü'l-Baki",
+        "description": "Medine-i Münevvere'nin ana kabristanıdır. Ehl-i Beyt, Peygamber eşleri ve 10 bin sahabi burada metfundur.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=X0fWpXfP2iI",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/22\/Al-Baqi_Cemetery_Medina.jpg\/1024px-Al-Baqi_Cemetery_Medina.jpg",
+        "created_at": "2026-01-22 19:54:00"
+    },
+    {
+        "id": "11",
+        "lat": 21.4137,
+        "lng": 39.8821,
+        "title": "Mina (Jamarat)",
+        "description": "Hac ibadeti sırasında şeytan taşlama işleminin gerçekleştirildiği kutsal bölgedir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=9_kFz-07F-M",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/e\/e0\/Mina_Tent_City.jpg\/1024px-Mina_Tent_City.jpg",
+        "created_at": "2026-01-22 19:35:00"
+    },
+    {
+        "id": "12",
+        "lat": 21.3892,
+        "lng": 39.9142,
+        "title": "Müzdelife",
+        "description": "Arafat ile Mina arasında kalan bölge. Hac ibadetinde vakfe yapılan ve taş toplanan kutsal alandır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=8L6020L-3I",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/1\/14\/Muzdalifah_Makkah.jpg\/1024px-Muzdalifah_Makkah.jpg",
+        "created_at": "2026-01-22 20:00:00"
+    },
+    {
+        "id": "14",
+        "lat": 24.4125,
+        "lng": 39.5436,
+        "title": "Mescid-i Şecere (Zülhuleyfe)",
+        "description": "Medine'den Mekke'ye gidenlerin ihrama girdiği mikat mahallidir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=v8V8hI0-M8X",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/4c\/Masjid_Dhul_Hulaifah.jpg\/1024px-Masjid_Dhul_Hulaifah.jpg",
+        "created_at": "2026-01-22 20:02:00"
+    },
+    {
+        "id": "15",
+        "lat": 24.477,
+        "lng": 39.599,
+        "title": "Yedi Mescitler (Hendek)",
+        "description": "Hendek Savaşı'nın yapıldığı bölgede sahabi efendilerimizin anısına inşa edilen mescitler topluluğudur.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=33L890G5MhY",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/87\/Seven_Mosques_Madinah.jpg\/1024px-Seven_Mosques_Madinah.jpg",
+        "created_at": "2026-01-22 20:03:00"
+    },
+    {
+        "id": "16",
+        "lat": 23.7744,
+        "lng": 38.7881,
+        "title": "Bedir Şehitliği",
+        "description": "İslam tarihinin ilk büyük zaferi olan Bedir Savaşı'nın mekanı ve Bedir şehitlerinin kabristanıdır.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=v8V8hI0-M8E",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/8\/8e\/Martyrs_of_Badr_Graveyard.jpg\/1024px-Martyrs_of_Badr_Graveyard.jpg",
+        "created_at": "2026-01-22 19:56:00"
+    },
+    {
+        "id": "17",
+        "lat": 21.4936,
+        "lng": 39.7951,
+        "title": "Mescid-i Âişe (Ten'im)",
+        "description": "Mekke'nin en yakın mikat mahallidir. Hz. Aişe validemizin ihrama girdiği yerdir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=XhIIn67yLts",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/4\/4e\/Masjid_Ayesha.jpg\/1024px-Masjid_Ayesha.jpg",
+        "created_at": "2026-01-22 19:37:00"
+    },
+    {
+        "id": "19",
+        "lat": 24.465,
+        "lng": 39.608,
+        "title": "Gamame Mescidi",
+        "description": "Efendimiz'in (SAV) bayram namazlarını kıldırdığı ve yağmur duası yaptığı mübarek açık alan mescididir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=pYInXlIInO8",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/52\/Masjid_Ghamama_Madinah.jpg\/1024px-Masjid_Ghamama_Madinah.jpg",
+        "created_at": "2026-01-22 19:57:00"
+    },
+    {
+        "id": "20",
+        "lat": 21.4217,
+        "lng": 39.8275,
+        "title": "Safa ve Merve Tepeleri",
+        "description": "Hac ve Umre ibadetinde Sa'y işleminin yapıldığı sembolik önemi büyük iki tepedir.",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=5V_9H-s_y1w",
+        "audio_url": "",
+        "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/7\/7b\/Safa_Marwa.jpg\/1024px-Safa_Marwa.jpg",
+        "created_at": "2026-01-22 19:38:00"
+    },
+    {
+        "id": 1769101269676,
+        "lat": 21.422914254060174,
+        "lng": 39.821072816848755,
+        "title": "Şübeyke Mezarlığı",
+        "description": "Mescid-i Haram'ın güneybatısında, yeni Kral Abdullah uzantısının yakınında yer almaktadır. Cebeli Ömer ile Anjum otelleri arasında kalmaktadır. İslam'ın gelişinden önce bazı putperest Araplar, kız çocuklarını bir utanç işareti olarak görüp diri diri gömmek gibi cahiliye adetlerini uygularlardı.",
+        "video_url": [
+            "https:\/\/www.youtube.com\/watch?v=7fLqNod7lZE",
+            "https:\/\/www.youtube.com\/watch?v=clXqd3EZvlE"
+        ],
+        "audio_url": "",
+        "image_url": "http:\/\/192.168.1.100:8080\/assets\/images\/subeykemezarligi.jpg",
+        "created_at": "2026-01-22 17:01:09"
+    },
+    {
+        "id": 1769113496972,
+        "lat": 21.42486681266281,
+        "lng": 39.82994556427003,
+        "title": "Peygamberimizin Doğduğu Ev",
+        "description": "Peygamberimizin doğduğu ev ile Ebû Kubeys Tepesi arasında yer almaktaydı.",
+        "video_url": [],
+        "audio_url": "",
+        "image_url": "http:\/\/192.168.1.100:8080\/assets\/images\/peygamber-efendimiz-in-sav-dogdugu-ev_642c0dab9f3f9.jpg",
+        "created_at": "2026-01-22 20:24:56"
+    },
+    {
+        "id": "1769113887239",
+        "lat": 21.436666444859718,
+        "lng": 39.82835235717053,
+        "title": "Hz Hatice Annemizin Kabri",
+        "description": "Peygamber Efendimiz Hz. Muhammed'in (asm) hanımı Hz. Hatice annemizin mezarı Mekke'deki Mualla mezarlığında bulunuyor. Kaynak: Peygamberimizin (asm) hanımı Hz. Hatice annemizin mezarı ",
+        "video_url": [
+            "https:\/\/www.youtube.com\/watch?v=wAaV9YVA-qc"
+        ],
+        "audio_url": "",
+        "image_url": "http:\/\/192.168.1.100:8080\/assets\/images\/peygamberimizin-asm-hanimi-hz-hatice-annemizin-mezari.jpg",
+        "created_at": "2026-01-22 20:31:27"
+    },
+    {
+        "id": "1769114082927",
+        "lat": 21.432886510934956,
+        "lng": 39.827998280525215,
+        "title": "Cennetü'l-Muallâ",
+        "description": "Mekke'nin en eski kabristanıdır. Hz. Hatice validemiz ve birçok sahabi burada metfundur.",
+        "video_url": [
+            "https:\/\/www.youtube.com\/watch?v=pLXOHMvXgdQ"
+        ],
+        "audio_url": "",
+        "image_url": "http:\/\/192.168.1.100:8080\/assets\/images\/Hz-Hatice-R-A-Cennet-ul-Mualla-Kabristani-Mekke.jpg",
+        "created_at": "2026-01-22 20:34:42"
+    }
+]
